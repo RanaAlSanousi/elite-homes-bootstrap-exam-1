@@ -1,4 +1,4 @@
-/* ===== Variables ===== */
+/* Vars */
 :root {
   --purple: #7c3aed;
   --purple-btn: #8b2cf5;
@@ -22,7 +22,7 @@
   --transition: all 0.3s ease;
 }
 
-/* ===== Global ===== */
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -47,8 +47,7 @@ a {
 img {
   max-width: 100%;
 }
-
-/* Remove Bootstrap's focus glow */
+/* Rveoming glow */
 .btn:focus,
 .btn:active,
 .form-control:focus,
@@ -67,8 +66,7 @@ img {
 .form-select:focus {
   border-color: var(--purple) !important;
 }
-
-/* Every section slides OVER the sticky hero */
+/
 main section,
 .footer {
   position: relative;
@@ -90,14 +88,13 @@ main .bg-soft {
   z-index: 2;
 }
 
-/* ===== Background circles ===== */
+/* Background circles */
 .circle {
   position: absolute;
   border-radius: 50%;
   z-index: 0;
 }
 
-/* Top-right set: big pale circle + ring over its lower-left edge */
 .circle-tr {
   width: 400px;
   height: 400px;
@@ -114,7 +111,6 @@ main .bg-soft {
   border: 3px solid #ddd6fe;
 }
 
-/* Bottom-left set: big pale circle + ring over its upper-right edge */
 .circle-bl {
   width: 390px;
   height: 390px;
@@ -131,7 +127,6 @@ main .bg-soft {
   border: 4px solid #e9d5ff;
 }
 
-/* Light version for the purple testimonials section */
 .circle-light {
   background-color: rgba(255, 255, 255, 0.06);
 }
@@ -140,7 +135,7 @@ main .bg-soft {
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-/* ===== Section header: badge with lines + gradient title ===== */
+/* Section head */
 .section-head {
   margin-bottom: 56px;
 }
@@ -231,7 +226,7 @@ main .bg-soft {
 .text-pink { color: var(--pink) !important; font-weight: 700; }
 .text-indigo { color: var(--indigo) !important; font-weight: 700; }
 
-/* ===== Buttons ===== */
+/* Buttons */
 .btn-main {
   background: var(--gradient);
   color: #ffffff;
@@ -263,14 +258,13 @@ main .bg-soft {
   transition: background-color 0.3s ease;
 }
 
-/* Only a little darker on hover, text stays purple */
 .btn-soft:hover,
 .btn-soft:active {
   background-color: #e4dcfd !important;
   color: var(--purple) !important;
 }
 
-/* ===== Navbar ===== */
+/* navbar */
 .navbar {
   padding: 18px 0;
   box-shadow: 0 2px 12px rgba(17, 24, 39, 0.08);
@@ -289,7 +283,7 @@ main .bg-soft {
   color: #374151;
 }
 
-/* Bars when closed, X when open */
+/* bars */
 .navbar-toggler .icon-open {
   display: none;
 }
@@ -311,7 +305,7 @@ main .bg-soft {
   transition: color 0.3s ease;
 }
 
-/* Underline (not on the Properties toggle, whose ::after is the arrow) */
+/* Underlines */
 .navbar .nav-link:not(.dropdown-toggle)::after {
   content: "";
   position: absolute;
@@ -337,7 +331,7 @@ main .bg-soft {
   width: 100%;
 }
 
-/* Properties dropdown arrow (replaces Bootstrap's triangle) */
+/* properties dropdown */
 .navbar .dropdown-toggle::after {
   content: "\f078";
   font-family: "Font Awesome 6 Free";
@@ -354,7 +348,7 @@ main .bg-soft {
   transform: rotate(180deg);
 }
 
-/* ===== Mega menu ===== */
+/* mega menu */
 .mega-menu {
   padding: 20px 0;
   margin-top: 18px !important;
@@ -484,7 +478,7 @@ main .bg-soft {
   transform: scale(1.1);
 }
 
-/* ===== Hero ===== */
+/* hero */
 .hero {
   position: relative;
   z-index: 0;
@@ -495,7 +489,7 @@ main .bg-soft {
   background-attachment: fixed;
 }
 
-/* On big screens the whole hero sticks and the page slides over it */
+/* hero screens */
 @media (min-width: 992px) and (min-height: 820px) {
   .hero {
     position: sticky;
@@ -600,7 +594,7 @@ main .bg-soft {
   margin: 0;
 }
 
-/* ===== Property Cards (card stays still, photo zooms) ===== */
+/* Property cards */
 .property-card {
   background-color: #ffffff;
   border-radius: 14px;
@@ -733,7 +727,7 @@ main .bg-soft {
   object-fit: cover;
 }
 
-/* ===== Services Tabs ===== */
+/* service tabs */
 .services-tabs {
   border-bottom: 1px solid var(--border);
   gap: 4px;
@@ -766,7 +760,7 @@ main .bg-soft {
   border-bottom-color: var(--purple);
 }
 
-/* Smooth tab switch: fade + slight slide up */
+/* other tabs */
 .tab-content {
   min-height: 520px;
 }
@@ -780,7 +774,7 @@ main .bg-soft {
   transform: translateY(0);
 }
 
-/* One color per tab */
+/* tabs */
 .theme-purple { --theme: #8b2cf5; --theme-dark: #7a1fe0; --theme-bg: #f3e8ff; }
 .theme-green  { --theme: #16a34a; --theme-dark: #15803d; --theme-bg: #dcfce7; }
 .theme-pink   { --theme: #db2777; --theme-dark: #be185d; --theme-bg: #fce7f3; }
@@ -806,7 +800,7 @@ main .bg-soft {
   margin-bottom: 20px;
 }
 
-/* Static icon: no hover effect */
+/* Static icon */
 .feature-icon {
   flex-shrink: 0;
   width: 42px;
@@ -880,7 +874,7 @@ main .bg-soft {
   margin: 0;
 }
 
-/* ===== Testimonials ===== */
+/* Testimonials */
 main .testimonials {
   background: linear-gradient(90deg, var(--purple-dark), var(--purple-deep));
 }
@@ -915,7 +909,7 @@ main .testimonials {
   margin-bottom: 28px;
 }
 
-/* Big screens: photo beside the name and details */
+/* Big screens */
 .client {
   display: flex;
   align-items: center;
